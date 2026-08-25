@@ -1,0 +1,47 @@
+# Secrets and credentials
+.env
+.env.*
+.env.local
+*.pem
+*.key
+credentials*
+secrets*
+
+# Node modules (if any)
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+
+# Graphify outputs (generated artifacts)
+graphify-out/*.json
+graphify-out/*.html
+graphify-out/*.svg
+graphify-out/*.md
+graphify-out/obsidian/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
