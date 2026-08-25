@@ -20,20 +20,40 @@ Repository ini berfungsi sebagai:
 
 **DEVELOPMENT ONLY — BUKAN production deployment target**
 
-## Quick Links
+## Graphify Analysis
 
-- [Governance](./governance/)
-- [Architecture](./architecture/)
-- [Agents](./agents/)
-- [Skills](./skills/)
-- [Knowledge](./knowledge/)
-- [Workflows](./workflows/)
-- [Tools](./tools/)
-- [Graphify](./graphify/)
-- [Docs](./docs/)
+Interactive knowledge graph available at: `graphify-out/graph.html`
+
+**Stats:** 55 nodes, 60 edges, 13 communities
+
+**God Nodes:**
+- Pak Ferdy Learning System (10 edges)
+- TGO Upstream (9 edges)
+- WIGUNA-AI (7 edges)
+
+**Communities:**
+- Classification Types
+- Production & Governance
+- Service Knowledge
+- Orchestration Model
+- TGO Core Components
+- WIGUNA OS Features
+
+---
 
 ## Production Reference
 
 Production URL: https://dash.bengkelwiguna.com
 
 **Production tidak boleh dimutasi tanpa explicit authorization.**
+
+---
+
+## Quick Links
+
+- [Governance](./governance/)
+- [Architecture](./architecture/)
+- [Knowledge](./knowledge/)
+- [Graphify](./graphify/)
+- [Graph Report](./graphify-out/GRAPH_REPORT.md)
+- [Interactive Graph](./graphify-out/graph.html)
