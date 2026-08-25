@@ -1,0 +1,26 @@
+{
+  "CLAUDE.md": {
+    "mtime": 1787632813.180221,
+    "seen": 1787633303.022903,
+    "ast_hash": "f9ee2cced92ac533ab133bf201dbb3f1",
+    "semantic_hash": "f9ee2cced92ac533ab133bf201dbb3f1"
+  },
+  "README.md": {
+    "mtime": 1787632825.3376875,
+    "seen": 1787633303.0229099,
+    "ast_hash": "e06705aea413da0984c63d25e0af06c4",
+    "semantic_hash": "e06705aea413da0984c63d25e0af06c4"
+  },
+  "architecture/PAK-FERDY-LEARNING.md": {
+    "mtime": 1787632865.7933323,
+    "seen": 1787633303.022913,
+    "ast_hash": "c9cef48f80bbe17363b67bcc469f19fb",
+    "semantic_hash": "c9cef48f80bbe17363b67bcc469f19fb"
+  },
+  "architecture/WIGUNA-ORCHESTRATION.md": {
+    "mtime": 1787632851.8444924,
+    "seen": 1787633303.0229151,
+    "ast_hash": "28d1efcf2192bbc949a8c74593f1e33e",
+    "semantic_hash": "28d1efcf2192bbc949a8c74593f1e33e"
+  }
+}
