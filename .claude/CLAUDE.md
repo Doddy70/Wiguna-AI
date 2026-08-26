@@ -1,3 +1,157 @@
+# TEMPORARY DEVELOPMENT MODE — STAGING FIRST
+## WIGUNA-AI | PRODUCTION PROTECTED
+
+> **PRIMARY DEVELOPMENT ENVIRONMENT = LOCALHOST STAGING**
+> Production remains as live system but NOT the main development environment.
+
+---
+
+# ENVIRONMENT POLICY
+
+## 1. LOCALHOST STAGING = PRIMARY
+
+All development work MUST be done in staging:
+- architecture changes
+- Agent behavior & instructions
+- Skill development
+- RAG / Workflow experiments
+- Learning pipeline
+- Pak Ferdy learning system
+- Regression & integration testing
+
+Staging MAY: build, rebuild, restart, modify source/database/skills/agents/workflows/RAG.
+
+## 2. PRODUCTION = PROTECTED
+
+Production MAY:
+- read/inspect/monitor
+- verify existing behavior
+- minimal safe recovery
+- explicitly authorized fixes
+
+Production MUST NOT:
+- experimentation
+- architecture redesign
+- trial-and-error
+- broad Docker operations
+- database experiments
+
+## 3. NO PRODUCTION DEVELOPMENT
+
+Unless explicitly authorized by user, do NOT:
+- docker build/rebuild/restart production
+- source sync / rsync production
+- database mutation for experiments
+- nginx / aaPanel changes
+
+---
+
+# CURRENT PRIORITIES
+
+| Priority | Focus |
+|---|---|
+| **P1** | STAGING BASELINE — ensure localhost staging starts, healthy, reproducible |
+| **P2** | GitHub baseline (`https://github.com/Doddy70/Wiguna-AI`) as source of truth |
+| **P3** | PERSISTENT LEARNING — Pak Ferdy teaching → extraction → canonical → runtime retrieval |
+| **P4** | RAG/KB REGRESSION — Paket Oli, GASPOL, Siaga, AJAG, IJIG, pricing |
+| **P5** | AGENT BEHAVIOR — Discovery First, no GASPOL default, correct RAG usage |
+| **P6** | PRODUCTION PROMOTION — only with exact change-set + rollback + explicit auth |
+
+---
+
+# DEVELOPMENT METHOD
+
+Use:
+```
+READ → IDENTIFY → MINIMUM CHANGE → IMPLEMENT → TEST → STOP
+```
+
+Do NOT use:
+```
+AUDIT → FORENSIC → TASK CHAIN → DOCUMENT → IMPLEMENT
+```
+
+---
+
+# STOP CONDITIONS
+
+Task is complete when staging behavior PASSES. Then STOP.
+
+Production promotion requires:
+1. Staging behavior PASS
+2. Regression PASS
+3. Exact change-set known
+4. Rollback path available
+5. User explicitly authorizes
+
+---
+
+# DOCUMENTATION RULE
+
+Create docs ONLY if:
+- permanent architecture changes
+- governance changes
+- onboarding source of truth needs update
+- rollback needed
+- business rule canonical needs preservation
+
+Do NOT create:
+- forensic reports
+- task reports
+- audit reports
+
+as default output.
+
+---
+
+# SOURCE OF TRUTH (Priority Order)
+
+1. Current code
+2. Graphify current graph
+3. Current staging state
+4. Verified production state
+5. Permanent architecture/governance docs
+6. Historical documentation
+
+Historical task reports are NOT source of truth if they contradict current implementation.
+
+---
+
+# GIT / GITHUB
+
+GitHub is the development baseline. Keep:
+- clean working tree
+- secrets excluded
+- customer conversation raw data excluded
+- runtime cache excluded
+- production credentials excluded
+
+---
+
+# PRODUCTION INCIDENT HANDLING
+
+If you find: broken Docker, stale config, WAHA problem, production drift
+
+Determine first:
+- **A** — blocks active task? → minimal safe recovery only
+- **B** — customer-facing operational failure? → minimal safe recovery only
+- **C** — unrelated to task? → document and move on, do NOT fix
+
+---
+
+# STOP CONDITION
+
+Task done when:
+- [ ] staging environment identified
+- [ ] staging verified healthy
+- [ ] production remains untouched
+- [ ] Git baseline confirmed
+- [ ] Graphify confirmed usable
+
+**STOP. Production protected. Staging is PRIMARY.**
+
+---
+
 # GRAPHIFY GOVERNANCE
 
 ## Purpose
@@ -49,8 +203,6 @@ git status
 
 ## Step 2: Understand Project Structure
 
-Run these queries to understand the codebase:
-
 ```bash
 # Core concepts
 graphify query "What is WIGUNA AI?"
@@ -59,50 +211,17 @@ graphify query "What is the learning pipeline?"
 # Architecture
 graphify explain "Pak Ferdy Learning System"
 graphify explain "LearningPipeline"
-
-# Production setup
-graphify path "WIGUNA" "Production"
 ```
 
 ## Step 3: Review Key Files
 
-Read these files to understand the project:
-
 1. `README.md` - Project overview
 2. `knowledge/LEARNING-CANDIDATES.md` - Learning system
 3. `pipeline/README.md` - Learning pipeline docs
-4. `graphify-out/GRAPH_REPORT.md` - Knowledge graph report
 
-## Step 4: Important Context
+## Step 4: Start Working
 
-**Production:** https://dash.bengkelwiguna.com
-
-**Production Freeze Active:**
-- NO build, deploy, rsync, docker operations
-- NO database migrations
-- Focus only on local development
-
-**Graph State:**
-- 554 nodes, 39 communities
-- Key nodes: CANONICAL LEARNING REVIEW GATE, LearningPipeline, Pak Ferdy Learning System
-- Graphify MCP connected and authenticated
-
-## Step 5: Start Working
-
-After completing Steps 1-4, acknowledge what you learned and ask what task to work on.
-
----
-
-IMPORTANT: After any significant query or task completion, save the knowledge:
-
-```bash
-graphify save-result \
-  --question "YOUR_QUESTION" \
-  --answer "YOUR_ANSWER" \
-  --type query \
-  --nodes "RELEVANT_NODE" \
-  --outcome useful
-```
+After completing Steps 1-3, acknowledge what you learned and ask what task to work on.
 
 ---
 
