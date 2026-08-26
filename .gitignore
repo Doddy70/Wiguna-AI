@@ -25,6 +25,7 @@ graphify-out/*.html
 graphify-out/*.svg
 graphify-out/*.md
 graphify-out/obsidian/
+graphify-out/cache/
 
 # EXCEPT: Track these core graphify artifacts
 !graphify-out/graph.json
@@ -48,6 +49,14 @@ Thumbs.db
 dist/
 build/
 *.log
+
+# Learning corpus (sensitive conversation data — never commit)
+knowledge/owner-learning/source/**/*.json
+knowledge/owner-learning/backups/
+
+# Pipeline cache
+pipeline/__pycache__/
+*.pyc
 
 # Temporary files
 *.tmp
