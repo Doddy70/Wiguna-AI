@@ -1,3 +1,31 @@
+# GRAPHIFY GOVERNANCE
+
+## Purpose
+
+Graphify represents **permanent architecture**, not session artifacts:
+
+- ✅ **Extract:** code relationships, component connections, design patterns, knowledge concepts, API contracts
+- ❌ **Don't extract:** debug logs, task histories, audit trails, temporary fixes, experiment noise
+
+## Update Triggers
+
+| Trigger | Update? |
+|---|---|
+| New file / new relationship | ✅ Yes |
+| Architecture refactor | ✅ Yes |
+| New knowledge concept | ✅ Yes |
+| Debug session | ❌ No |
+| Task finished | ❌ No |
+| Temporary workaround | ❌ No |
+
+## Memory vs Graph
+
+- `graph.json` = permanent architecture (rebuild on structural changes)
+- `memory/` = agent session Q&A (persist per session)
+- `LESSONS.md` = aggregated agent memory (not code memory)
+
+---
+
 # Agent Onboarding
 
 On new agent session, follow these steps in order:
