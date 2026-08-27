@@ -1,11 +1,11 @@
 # WIGUNA-AI
 
-Development repository for WIGUNA OS — an intelligent automotive service assistant powered by AI agents, built on top of TGO (Telegram Web Assistant).
+Development repository for WIGUNA OS — an intelligent automotive service assistant powered by AI agents (LLM), RAG, and Tools Orchestrations.
 
 ## Purpose
 
 This repository serves as:
-- **WIGUNA customization layer** on top of TGO
+- **WIGUNA customization layer** 
 - **Agent definitions** for automotive service orchestration
 - **Knowledge architecture** for service intelligence
 - **Learning pipeline** for continuous AI improvement from real customer interactions
